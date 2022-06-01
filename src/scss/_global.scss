@@ -58,7 +58,10 @@ body {
 }
 
 .btn {
-	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 11px 25px;
 	border-radius: 4px;
 	background-color: $blue;
 	color: $white;
@@ -69,5 +72,32 @@ body {
 	}
 	&:active{
 		background-color: rgba($color: $blue, $alpha: 0.5);
+	}
+	// .btn__second
+	&__second {
+		padding: 13px 27px;
+		color: $blue;
+		background-color: $white;
+		&:hover{
+			color: $blue;
+			background-color: $white;
+			opacity: 0.8;
+		}
+		&:active{
+			background-color: $white;
+		}
+	}
+}
+h1{
+	font-weight: 700;
+	font-size: 48px;
+	line-height: calc(62 / 48 * 100%);
+}
+p{
+	font-weight: 400;
+	line-height: calc(14 / 24 * 100%);
+	color: $lightgray;
+	.uppertext {
+		text-transform: uppercase;
 	}
 }

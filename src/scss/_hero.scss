@@ -1,0 +1,71 @@
+.hero {
+	min-height: calc(100vh - 72px);
+	width: 100%;
+	position: relative;
+	// .hero__bg
+	&__bg {
+		z-index: -1;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 850px;
+		height: 692px;
+	}
+	// .hero__body
+	&__body {
+		padding-top: 100px;
+		width: 50%;
+	}
+	// .hero__title
+	&__title {
+		margin-bottom: 15px;
+	}
+	// .hero__text
+	&__text {
+		margin-bottom: 75px;
+	}
+	// .hero__buttons
+	&__buttons {
+		margin-bottom: 141px;
+		display: flex;
+		gap: 19px;
+	}
+	// .hero__btn
+	&__btn {
+		display: flex;
+		gap: 7px;
+	}
+	// .hero__subtext
+	&__subtext {
+		margin-bottom: 25px;
+	}
+	// .hero__items
+	&__items {
+		display: flex;
+		gap: 80px;
+	}
+	// .hero__item
+	&__item {
+	}
+}
+
+.itemhero {
+	// .itemhero__title
+	&__title {
+		margin-bottom: 12px;
+
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 1;
+		color: $black;
+	}
+	// .itemhero__subtitle
+	&__subtitle {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1;
+		text-transform: uppercase;
+		color: $gray;
+	}
+}
+

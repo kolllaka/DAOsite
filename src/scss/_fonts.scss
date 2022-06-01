@@ -38,15 +38,15 @@
 	font-family: 'icomoon';
 	src:  url('../fonts/icons/icomoon.eot?ijownn');
 	src:  url('../fonts/icons/icomoon.eot?ijownn#iefix') format('embedded-opentype'),
-	  url('../fonts/icons/icomoon.ttf?ijownn') format('truetype'),
-	  url('../fonts/icons/icomoon.woff?ijownn') format('woff'),
-	  url('../fonts/icons/icomoon.svg?ijownn#icomoon') format('svg');
+		url('../fonts/icons/icomoon.ttf?ijownn') format('truetype'),
+		url('../fonts/icons/icomoon.woff?ijownn') format('woff'),
+		url('../fonts/icons/icomoon.svg?ijownn#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
- }
- 
- [class^="_icon-"]::before, [class*=" _icon-"]::before {
+}
+
+[class^="_icon-"]::before, [class*=" _icon-"]::before {
 	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: 'icomoon' !important;
 	speak: never;
