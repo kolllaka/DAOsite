@@ -162,14 +162,14 @@ if (sliders) {
 if (document.querySelector('.slider-top')) {
 	let sliderBodyTop = document.querySelector('.slider-top').querySelector('.slider__body');
 	let itemSlider = new Swiper(sliderBodyTop, {
-		autoplay: {
-			delay: 2000,
-		},
+		// autoplay: {
+		// 	delay: 0,
+		// },
 		observer: true,
 		observeParents: true,
 		slidesPerView: 5,
 		spaceBetween: 69,
-		speed: 1000,
+		speed: 1500,
 		loop: true,
 		// Dotts
 		pagination: {
@@ -179,7 +179,7 @@ if (document.querySelector('.slider-top')) {
 		},
 		breakpoints: {
 			// when window width is >= 320px
-			320: {
+			300: {
 				slidesPerView: 1,
 				spaceBetween: 20
 			},
@@ -208,9 +208,9 @@ if (document.querySelector('.slider-top')) {
 if (document.querySelector('.slider-bottom')) {
 	let sliderBodyBottom = document.querySelector('.slider-bottom').querySelector('.slider__body');
 	let itemSlider = new Swiper(sliderBodyBottom, {
-		autoplay: {
-			delay: 1500,
-		},
+		// autoplay: {
+		// 	delay: 0,
+		// },
 		observer: true,
 		observeParents: true,
 		slidesPerView: 5,
@@ -225,7 +225,7 @@ if (document.querySelector('.slider-bottom')) {
 		},
 		breakpoints: {
 			// when window width is >= 320px
-			320: {
+			300: {
 				slidesPerView: 1,
 				spaceBetween: 170
 			},

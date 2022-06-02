@@ -1,0 +1,120 @@
+.backed {
+	padding: 32px 0;
+	margin-bottom: 110px;
+	background: #FAF9FA;;
+	@media (max-width: $breakpoint480) {
+		padding: 20px 0;
+		margin-bottom: 30px;
+	}
+	// .backed__body
+	&__body {
+		margin-bottom: 45px;
+	}
+	// .backed__items
+	&__items {
+		display: grid;
+		gap: 20px 30px;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		@media (max-width: $breakpoint1200) {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+		@media (max-width: $breakpoint768) {
+			grid-template-columns: 1fr 1fr;
+		}
+		@media (max-width: $breakpoint600) {
+			grid-template-columns: 1fr;
+			gap: 10px 10px;
+		}
+	}
+	// .backed__item
+	&__item {
+		flex: 0 0 25%;
+	}
+}
+
+.itembacked {
+	padding: 20px;
+	background: $white;
+	&:nth-child(8n+1),
+	&:nth-child(8n+3),
+	&:nth-child(8n+6),
+	&:nth-child(8n+8){
+		background: #F7F7F7;
+	}
+	&:hover{
+		// box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05);
+		filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.05));
+	}
+	@media (max-width: $breakpoint1200) {
+		&:nth-child(1n) {
+			background: $white;
+		}
+		&:nth-child(2n + 1) {
+			background: #F7F7F7;
+		}
+	}
+	@media (max-width: $breakpoint768) {
+		&:nth-child(1n) {
+			background: $white;
+		}
+		&:nth-child(4n+1),
+		&:nth-child(4n+4){
+			background: #F7F7F7;
+		}
+	}
+	@media (max-width: $breakpoint600) {
+		&:nth-child(1n) {
+			background: $white;
+		}
+		&:nth-child(2n+1){
+			background: #F7F7F7;
+		}
+	}
+	border-radius: 4px;
+	// .itembacked__img
+	&__img {
+		width: 100%;
+		border-radius: 4px;
+		margin-bottom: 15px;
+		img{
+			width: 100%;
+			border-radius: 4px;
+		}
+	}
+	// .itembacked__title
+	&__title {
+		margin-bottom: 7px;
+
+		white-space: nowrap;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1;
+		color: $black;
+		@media (max-width: $breakpoint480) {
+			text-align: center;
+			margin-bottom: 10px;
+		}
+	}
+	// .itembacked__links
+	&__links {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		@media (max-width: $breakpoint480) {
+			justify-content: space-around;
+		}
+	}
+	// .itembacked__link
+	&__link {
+		@media (max-width: $breakpoint480) {
+			svg{
+				width: 200%;
+				height: 200%;
+			}
+		}
+		&:hover{
+			opacity: 0.8;
+		}
+	}
+}
+
