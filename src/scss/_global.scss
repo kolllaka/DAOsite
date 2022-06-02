@@ -126,7 +126,11 @@ p{
 		text-transform: uppercase;
 	}
 }
-
+a{
+	&:hover{
+		opacity: 0.5;
+	}
+}
 
 .section {
 	// .section__title

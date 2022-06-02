@@ -1,0 +1,139 @@
+.footer {
+	padding-top: 97px;
+	padding-bottom: 89px;
+	background: $black;
+	// .footer__body
+	&__body {
+	}
+	// .footer__row
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		&:not(:last-child){
+			margin-bottom: 40px;
+		}
+	}
+	// .footer__column
+	&__column {
+		flex: 0 0 33%;
+	}
+	// .footer__logo
+	&__logo {
+		margin-bottom: 20px;
+
+		font-weight: 800;
+		font-size: 18px;
+		line-height: 1;
+		color: $white;
+	}
+	// .footer__title
+	&__title {
+		margin-bottom: 12px;
+
+		color: $white;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 1;
+	}
+	// .footer__text
+	&__text {
+		color: $white;
+	}
+	// .footer__input
+	&__input {
+		margin-bottom: 10px;
+	}
+	// .footer__credit
+	&__credit {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1;
+		color: #D6D5DF;
+	}
+	// .footer__links
+	&__links {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+	// .footer__link
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-shrink: 0;
+		flex-grow: 0;
+		width: 50px;
+		height: 50px;
+		background: $gray;
+		border-radius: 50%;
+		&-hand{
+			position: relative;
+			&::after{
+				content: '';
+				position: absolute;
+				display: block;
+				background: url('../img/footer/hand.png') bottom no-repeat;
+				bottom: -9px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 14px;
+				height: 14px;
+			}
+		}
+		&:hover{
+			opacity: 0.5;
+		}
+	}
+}
+
+.footerinput {
+	padding: 8px;
+	background: $white;
+	border-radius: 4px;
+	position: relative;
+	// .footerinput__body
+	&__body {
+		display: flex;
+	}
+	// .footerinput__input
+	&__input {
+		z-index: 2;
+		padding: 14px 12px;
+		flex: 1 1 auto;
+
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1;
+		color: $lightgray;
+		&:focus~.footerinput__border{
+				outline: 1px solid red;
+			}
+	}
+	// .footerinput__btn
+	&__btn {
+		z-index: 2;
+		padding: 11px;
+		flex-grow: 0;
+		flex-shrink: 0;
+		background: #2962EF;
+		border-radius: 4px;
+		&:hover{
+			opacity: 0.8;
+		}
+		&:active{
+			opacity: 0.5;
+		}
+	}
+	// .footerinput__border
+	&__border {
+		z-index: 1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		border-radius: 4px;
+	}
+}
+
