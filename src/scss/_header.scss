@@ -45,19 +45,34 @@ nav {
 				color: $lightgray;
 			}
 		}
+		@media (max-width: $breakpoint768) {
+			font-size: 40px;
+		}
+		@media (max-width: $breakpoint480) {
+			font-size: 35px;
+		}
 	}
 	// .menu__btn
 	&__btn {
 		padding: 13px 20px;
+		@media (max-width: $breakpoint768) {
+			font-size: 40px;
+		}
+		@media (max-width: $breakpoint480) {
+			font-size: 25px;
+			padding-left: 30vw;
+			padding-right: 30vw;
+		}
 	}
 }
+
 
 .burger {
 	display: none;
 }
 
 // Burger menu styles
-@media screen and (max-width: $burgerBreakpoint) {
+@media (max-width: $burgerBreakpoint) {
 	// .menu
 	.menu {
 		position: fixed;
@@ -123,11 +138,5 @@ nav {
 				}
 			}
 		}
-	}
-}
-@media screen and (max-width: $breakpoint480){
-	.menu__btn{
-		padding-left: 30vw;
-		padding-right: 30vw;
 	}
 }

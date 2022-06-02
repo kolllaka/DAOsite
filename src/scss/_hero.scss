@@ -23,6 +23,9 @@
 	// .hero__body
 	&__body {
 		padding-top: 100px;
+		@media (max-width:$breakpoint600) {
+			padding-top: 20px;
+		}
 	}
 	// .hero__title
 	&__title {
@@ -34,42 +37,79 @@
 		@media (max-width:$breakpoint768) {
 			width: 70%;
 		}
-		@media (max-width: 600px) {
+		@media (max-width:$breakpoint600) {
 			width: 100%;
 		}
 	}
 	// .hero__text
 	&__text {
 		margin-bottom: 63px;
+		@media (max-width:$breakpoint600) {
+			margin-bottom: 50px;
+		}
+		@media (max-width:$breakpoint480) {
+			margin-bottom: 30px;
+		}
 	}
 	// .hero__buttons
 	&__buttons {
 		margin-bottom: 130px;
 		display: flex;
 		gap: 19px;
+		@media (max-width:$breakpoint600) {
+			justify-content: center;
+			gap: 30px;
+			margin-bottom: 50px;
+		}
+		@media (max-width:$breakpoint480) {
+			justify-content: center;
+			gap: 10px;
+			flex-wrap: wrap;
+			margin-bottom: 30px;
+		}
 	}
 	// .hero__btn
 	&__btn {
 		display: flex;
 		gap: 7px;
+		@media (max-width:$breakpoint480) {
+			width: 100%;
+		}
 	}
 	// .hero__subtext
 	&__subtext {
 		margin-bottom: 25px;
+		@media (max-width:$breakpoint480) {
+			margin-bottom: 15px;
+		}
 	}
 	// .hero__items
 	&__items {
 		display: flex;
 		gap: 80px;
+		margin-bottom: 20px;
+		@media (max-width:$breakpoint600) {
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 40px;
+		}
+		@media (max-width:$breakpoint480) {
+			gap: 20px;
+		}
 	}
 	// .hero__item
 	&__item {
-		margin-bottom: 20px;
+		@media (max-width:$breakpoint480) {
+			width: 100%;
+		}
 	}
 }
 
 .itemhero {
 	// .itemhero__title
+	@media (max-width:$breakpoint480) {
+		text-align: center;
+	}
 	&__title {
 		margin-bottom: 12px;
 

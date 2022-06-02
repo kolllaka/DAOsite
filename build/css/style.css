@@ -249,7 +249,7 @@ h1 {
 
 p {
   font-weight: 400;
-  line-height: 58.3333333333%;
+  line-height: 171.4285714286%;
   color: #9998A4;
 }
 
@@ -396,6 +396,7 @@ nav {
   display: -ms-flexbox;
   display: flex;
   gap: 80px;
+  margin-bottom: 20px;
 }
 
 .itemhero__title {
@@ -435,12 +436,14 @@ nav {
     max-width: 750px;
   }
 
-  .hero__title {
-    width: 70%;
+  .menu__link {
+    font-size: 40px;
   }
-}
 
-@media screen and (max-width: 767.98px) {
+  .menu__btn {
+    font-size: 40px;
+  }
+
   .menu {
     position: fixed;
     background: rgba(153, 152, 164, 0.8);
@@ -529,15 +532,55 @@ nav {
             transform: rotate(45deg);
     bottom: calc(50% - 1px);
   }
+
+  .hero__title {
+    width: 70%;
+  }
 }
 
 @media (max-width: 600px) {
   .hero__bg {
     display: none;
   }
+}
+
+@media (max-width: 599.98px) {
+  h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .hero__body {
+    padding-top: 20px;
+  }
 
   .hero__title {
     width: 100%;
+  }
+
+  .hero__text {
+    margin-bottom: 50px;
+  }
+
+  .hero__buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .hero__items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 40px;
   }
 }
 
@@ -545,11 +588,48 @@ nav {
   .container {
     max-width: none;
   }
-}
 
-@media screen and (max-width: 479.98px) {
+  .menu__link {
+    font-size: 35px;
+  }
+
   .menu__btn {
+    font-size: 25px;
     padding-left: 30vw;
     padding-right: 30vw;
+  }
+
+  .hero__text {
+    margin-bottom: 30px;
+  }
+
+  .hero__buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  .hero__btn {
+    width: 100%;
+  }
+
+  .hero__subtext {
+    margin-bottom: 15px;
+  }
+
+  .hero__items {
+    gap: 20px;
+  }
+
+  .hero__item {
+    width: 100%;
+  }
+
+  .itemhero {
+    text-align: center;
   }
 }
