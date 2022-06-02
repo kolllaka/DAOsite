@@ -1,0 +1,48 @@
+.brands {
+	background: #FAF9FA;
+	padding: 50px 0;
+	// .brands__body
+	&__body {
+		overflow: hidden;
+	}
+	// .brands__title
+	&__title {
+		margin-bottom: 46px;
+		text-align: center;
+	}
+	// .brands__items
+	&__items {
+		display: flex;
+		// .brands__items-top
+		&-top {
+			margin-bottom: 40px;
+		}
+		// .brands__items-bottom
+		&-bottom {
+			justify-content: space-between;
+			margin: 0 91px;
+		}
+	}
+	// .brands__item
+	&__item {
+	}
+}
+.itembrands {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	// .itembrands__icon
+	&__icon {
+		height: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img{
+		}
+	}
+	// .itembrands__title
+	&__title {
+		white-space: nowrap;
+	}
+}
