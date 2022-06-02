@@ -23,8 +23,10 @@
 	// .hero__body
 	&__body {
 		padding-top: 100px;
+		margin-bottom: 100px;
 		@media (max-width:$breakpoint600) {
 			padding-top: 20px;
+			margin-bottom: 20px;
 		}
 	}
 	// .hero__title

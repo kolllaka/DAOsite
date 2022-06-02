@@ -25,6 +25,7 @@ body {
 		font-weight: 600;
 		font-size: 14px;
 		line-height: 1;
+		color: #232427;
 		color: $black;
 
 	&.locked{
@@ -100,6 +101,11 @@ h1{
 		text-align: center;
 	}
 }
+h2{
+	font-weight: 700;
+	font-size: 36px;
+	line-height: calc(44 / 36 * 100%);
+}
 p{
 	font-weight: 400;
 	line-height: calc(24 / 14 * 100%);
@@ -109,5 +115,19 @@ p{
 	}
 	.uppertext {
 		text-transform: uppercase;
+	}
+}
+
+
+.section {
+	// .section__title
+	&__title {
+		margin-bottom: 15px;
+	}
+	// .section__text
+	&__text {
+	}
+	@media (max-width:$breakpoint600) {
+		text-align: center;
 	}
 }
