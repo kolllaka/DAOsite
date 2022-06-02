@@ -142,7 +142,7 @@ h6 {
 }
 
 .container {
-  max-width: 1220px;
+  max-width: 1120px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
@@ -215,6 +215,10 @@ body.locked {
 .btn:hover {
   color: #232427;
   background-color: rgba(41, 98, 239, 0.8);
+}
+
+.btn:hover path {
+  fill: #232427;
 }
 
 .btn:active {
@@ -346,25 +350,30 @@ nav {
   position: absolute;
   top: 0;
   right: 0;
-  width: 850px;
+  width: calc(364px + 500 * (100vw - 600px) / 840);
   height: 692px;
+}
+
+.hero__bg img {
+  -o-object-position: left bottom;
+     object-position: left bottom;
 }
 
 .hero__body {
   padding-top: 100px;
-  width: 50%;
 }
 
 .hero__title {
   margin-bottom: 15px;
+  width: 44%;
 }
 
 .hero__text {
-  margin-bottom: 75px;
+  margin-bottom: 63px;
 }
 
 .hero__buttons {
-  margin-bottom: 141px;
+  margin-bottom: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,15 +414,29 @@ nav {
   color: #5E5C6C;
 }
 
+@media (min-width: 1440px) {
+  .hero__bg {
+    height: calc(692px + 300 * (100vw - 1440px) / 1560);
+  }
+}
+
 @media (max-width: 991.98px) {
   .container {
     max-width: 970px;
+  }
+
+  .hero__title {
+    width: 50%;
   }
 }
 
 @media (max-width: 767.98px) {
   .container {
     max-width: 750px;
+  }
+
+  .hero__title {
+    width: 70%;
   }
 }
 
@@ -505,6 +528,16 @@ nav {
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
     bottom: calc(50% - 1px);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero__bg {
+    display: none;
+  }
+
+  .hero__title {
+    width: 100%;
   }
 }
 
