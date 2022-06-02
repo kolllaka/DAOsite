@@ -2,6 +2,10 @@
 	padding-top: 97px;
 	padding-bottom: 89px;
 	background: $black;
+	@media (max-width: $breakpoint600) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
 	// .footer__body
 	&__body {
 	}
@@ -12,19 +16,41 @@
 		&:not(:last-child){
 			margin-bottom: 40px;
 		}
+		@media (max-width: $breakpoint1200) {
+			gap: 100px;
+		}
+		@media (max-width: $breakpoint992) {
+			gap: 30px;
+		}
+		@media (max-width: $breakpoint600) {
+			flex-wrap: wrap;
+			&:last-child{
+				flex-wrap: wrap-reverse;
+			}
+		}
 	}
 	// .footer__column
 	&__column {
 		flex: 0 0 33%;
+		@media (max-width: $breakpoint1200) {
+			flex: 0 1 40%;
+		}
+		@media (max-width: $breakpoint992) {
+			flex: 0 1 50%;
+		}
+		@media (max-width: $breakpoint600) {
+			flex: 0 1 100%;
+		}
 	}
 	// .footer__logo
 	&__logo {
 		margin-bottom: 20px;
-
-		font-weight: 800;
-		font-size: 18px;
-		line-height: 1;
-		color: $white;
+		a{
+			font-weight: 800;
+			font-size: 18px;
+			line-height: 1;
+			color: $white;
+		}
 	}
 	// .footer__title
 	&__title {
@@ -34,6 +60,9 @@
 		font-weight: 600;
 		font-size: 16px;
 		line-height: 1;
+		@media (max-width: $breakpoint600) {
+			text-align: center;
+		}
 	}
 	// .footer__text
 	&__text {
@@ -41,20 +70,35 @@
 	}
 	// .footer__input
 	&__input {
+		max-width: 344px;
 		margin-bottom: 10px;
+		@media (max-width: $breakpoint600) {
+			max-width: none;
+		}
 	}
 	// .footer__credit
 	&__credit {
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 1;
-		color: #D6D5DF;
+		span{
+			display: block;
+			margin-bottom: 7px;
+
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 1;
+			color: #D6D5DF;
+		}
+		@media (max-width: $breakpoint600) {
+			text-align: center;
+		}
 	}
 	// .footer__links
 	&__links {
 		display: flex;
 		align-items: center;
 		gap: 30px;
+		@media (max-width: $breakpoint600) {
+			justify-content: center;
+		}
 	}
 	// .footer__link
 	&__link {
@@ -107,8 +151,8 @@
 		line-height: 1;
 		color: $lightgray;
 		&:focus~.footerinput__border{
-				outline: 1px solid red;
-			}
+			outline: 1px solid red;
+		}
 	}
 	// .footerinput__btn
 	&__btn {
