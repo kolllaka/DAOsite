@@ -33,18 +33,6 @@ body {
 	}
 }
 
-// Animations
-// Fade
-@keyframes fade {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
 // Images
 ._ibg {
 	position: relative;
@@ -70,6 +58,7 @@ body {
 	&:hover{
 		color: $black;
 		background-color: rgba($color: $blue, $alpha: 0.8);
+		opacity: 0.8;
 		path{
 			fill: $black;
 		}
