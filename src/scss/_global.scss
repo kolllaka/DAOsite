@@ -58,7 +58,6 @@ body {
 	&:hover{
 		color: $black;
 		background-color: rgba($color: $blue, $alpha: 0.8);
-		opacity: 0.8;
 		path{
 			fill: $black;
 		}
@@ -117,7 +116,7 @@ p{
 }
 a{
 	&:hover{
-		opacity: 0.5;
+		opacity: 0.8;
 	}
 }
 
